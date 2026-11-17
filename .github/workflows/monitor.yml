@@ -36,6 +36,7 @@ jobs:
           RUBIKA_CHAT: ${{ secrets.RUBIKA_CHAT }}
           BALE_TOKEN: ${{ secrets.BALE_TOKEN }}
           BALE_CHAT: ${{ secrets.BALE_CHAT }}
+          DATA_DIR: ${{ github.workspace }}/data
         run: python cloud-monitor/monitor.py
 
       - name: Commit data
